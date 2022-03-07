@@ -16,7 +16,7 @@ $loginURL = filter_var($authUrl, FILTER_SANITIZE_URL);
 
 <head>
     <meta charset="utf-8">
-    <title>Sign in - Open PRO Demo</title>
+    <title>Sign in - VPRojects</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="style2.css" rel="stylesheet">
     
@@ -31,28 +31,19 @@ $loginURL = filter_var($authUrl, FILTER_SANITIZE_URL);
         <header class="tj su ns">
             <div class="sm nd au hk">
                 <div class="ip ol od iy">
-                    <div class="sq rl"> <a class="ic" href="index" aria-label="Cruip"> <svg class="sl ij ae text-purple-600" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M31.952 14.751a260.51 260.51 0 00-4.359-4.407C23.932 6.734 20.16 3.182 16.171 0c1.634.017 3.21.28 4.692.751 3.487 3.114 6.846 6.398 10.163 9.737.493 1.346.811 2.776.926 4.262zm-1.388 7.883c-2.496-2.597-5.051-5.12-7.737-7.471-3.706-3.246-10.693-9.81-15.736-7.418-4.552 2.158-4.717 10.543-4.96 16.238A15.926 15.926 0 010 16C0 9.799 3.528 4.421 8.686 1.766c1.82.593 3.593 1.675 5.038 2.587 6.569 4.14 12.29 9.71 17.792 15.57-.237.94-.557 1.846-.952 2.711zm-4.505 5.81a56.161 56.161 0 00-1.007-.823c-2.574-2.054-6.087-4.805-9.394-4.044-3.022.695-4.264 4.267-4.97 7.52a15.945 15.945 0 01-3.665-1.85c.366-3.242.89-6.675 2.405-9.364 2.315-4.107 6.287-3.072 9.613-1.132 3.36 1.96 6.417 4.572 9.313 7.417a16.097 16.097 0 01-2.295 2.275z"></path>
-                            </svg> </a> </div>
+                   <div class="sq rl"> <a class="ic" href="index.html" aria-label="Cruip">
+                        <img width="60px" height="60px"src="images/logo.png" alt="logo" />                      </div>
                     <nav class="im pv de">
                         <ul class="ip sz oh ou ol">
-                            <li> <a class="ls cx au al ip ol lz cr cf" href="features.html">Features</a> </li>
-                            <li> <a class="ls cx au al ip ol lz cr cf" href="pricing.html">Pricing</a> </li>
-                            <li> <a class="ls cx au al ip ol lz cr cf" href="blog.html">Blog</a> </li>
+                          <li> <a class="ls cx au al ip ol lz cr cf" href="index.html">Home</a> </li>
+                            
                             <li> <a class="ls cx au al ip ol lz cr cf" href="about.html">About us</a> </li>
-                            <li class="tq" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false"> <a class="ls cx au al ip ol lz cr cf" href="#0" aria-haspopup="true" :aria-expanded="open" @focus="open = true" @focusout="open = false" @click.prevent=""> Support <svg class="sa ib ae lf ot r_ sq" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z"></path>
-                                    </svg> </a>
-                                <ul class="oe tj nn nt sh ud al ry oq" x-show="open" x-transition:enter="lz cl cs p" x-transition:enter-start="l_ n" x-transition:enter-end="lq v" x-transition:leave="lz cl cs" x-transition:leave-start="lq" x-transition:leave-end="l_" x-cloak="">
-                                    <li> <a class="fk fy li ck ip al au le" href="contact.html" @focus="open = true" @focusout="open = false">Contact us</a> </li>
-                                    <li> <a class="fk fy li ck ip al au le" href="help.html" @focus="open = true" @focusout="open = false">Help center</a> </li>
-                                    <li> <a class="fk fy li ck ip al au le" href="404.html" @focus="open = true" @focusout="open = false">404</a> </li>
-                                </ul>
-                            </li>
+                            <li> <a class="ls cx au al ip ol lz cr cf" href="contact.html">Contact Us</a> </li>
+                            <li> <a class="ls cx au al ip ol lz cr cf" href="https://csivitap.co.in/">CSI©</a> </li>
                         </ul>
                         <ul class="ip sz oh ou ol">
-                            <li> <a class="fk text-purple-600 cx au av ip ol lz cr cf" href="signin">Sign in</a> </li>
-                            <li> <a class="tn la uh ch rp" href="signup">Sign up</a> </li>
+                            <li> <a class="fk text-purple-600 cx au av ip ol lz cr cf" href="signin.php">Sign in</a> </li>
+                            <li> <a class="tn la uh ch rp" href="ide/index.php">Start IDE</a> </li>
                         </ul>
                     </nav>
                     <div class="pg" x-data="{ expanded: false }"> <button class="tm" :class="{ 'active': expanded }" @click.stop="expanded = !expanded" aria-controls="mobile-nav" :aria-expanded="expanded"> <span class="tx">Menu</span> <svg class="sp ix ae ls cx lz cr cf" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -62,19 +53,13 @@ $loginURL = filter_var($authUrl, FILTER_SANITIZE_URL);
                             </svg> </button>
                         <nav id="mobile-nav" class="tj nn no nr su au hk o_ ct co cf" x-ref="mobileNav" :style="expanded ? 'max-height: ' + $refs.mobileNav.scrollHeight + 'px; opacity: 1' : 'max-height: 0; opacity: .8'" @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-cloak="">
                             <ul class="ud au al">
-                                <li> <a class="ip ls cx al" href="features.html">Features</a> </li>
-                                <li> <a class="ip ls cx al" href="pricing.html">Pricing</a> </li>
-                                <li> <a class="ip ls cx al" href="blog.html">Blog</a> </li>
+                                <li> <a class="ip ls cx al" href="index.html">Home</a> </li>
                                 <li> <a class="ip ls cx al" href="about.html">About us</a> </li>
-                                <li class="al nq te _ ui"> <span class="ip ls al">Support</span>
-                                    <ul class="fr">
-                                        <li> <a class="fy ip fk li cx al" href="contact.html">Contact us</a> </li>
-                                        <li> <a class="fy ip fk li cx al" href="help.html">Help center</a> </li>
-                                        <li> <a class="fy ip fk li cx al" href="404.html">404</a> </li>
-                                    </ul>
-                                </li>
-                                <li> <a class="ip fk su text-purple-600 cx al op" href="signin">Sign in</a> </li>
-                                <li> <a class="fk su id ol op x uo au al nq oq la uh ch lz cr cf" href="signup">Sign up</a> </li>
+                                <li> <a class="ip ls cx al" href="contact.html">Contact Us</a> </li>
+                               <li> <a class="ip ls cx al" href="https://csivitap.co.in/">CSI©</a> </li>
+                                    
+                                <li> <a class="ip fk su text-purple-600 cx al op" href="signin.php">Sign in</a> </li>
+                                <li> <a class="fk su id ol op x uo au al nq oq la uh ch lz cr cf" href="ide/index.php">Start IDE</a> </li>
                             </ul>
                         </nav>
                     </div>
@@ -112,13 +97,13 @@ $loginURL = filter_var($authUrl, FILTER_SANITIZE_URL);
                         <div class="sb nd">
                             <form>
                                 <div class="ip ou nv">
-                                    <div class="su aa">
-                                        <button class="tt ac la up cp su tq ip ol">
+                                    <div class=" aa">
+                                        <button class="tt ac  up cp  tq ip ol">
                                             <svg class="sf iw ae la lj sq ng" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"></path>
                                             </svg>
                                             <span class="ix ip ol z ur ul rl" aria-hidden="true"></span>
-                                            <a href="<?= htmlspecialchars( $loginURL ); ?>" class="sj aq az rc">Go to Google</a> 
+                                            <a href="<?= htmlspecialchars( $loginURL ); ?>" class="sj aq az rc" >Continue with Google</a> 
                                            <!-- <span class="sj aq az rc">Sign in with Google</span> -->
                                         </button>
                                     </div>

@@ -128,7 +128,7 @@ if (isset($_POST['submit'])) {
                                         <li> <a class="fy ip fk li cx al" href="404.html">404</a> </li>
                                     </ul>
                                 </li>
-                                <li> <a class="ip fk su text-purple-600 cx al op" href="signin">Sign in</a> </li>
+                                <li> <a class="ip fk su text-purple-600 cx al op" href="signin.php">Sign in</a> </li>
                                 <li> <a class="fk su id ol op x uo au al nq oq la uh ch lz cr cf" href="signup">Sign
                                         up</a> </li>
                             </ul>
@@ -221,7 +221,7 @@ if (isset($_POST['submit'])) {
                                 </div>
                             </form>
                             <div class="li fp ro">
-                                Already using VProjects? <a class="text-purple-600 cx lz cr cf" href="signin">Sign
+                                Already using VProjects? <a class="text-purple-600 cx lz cr cf" href="signin.php">Sign
                                     in</a>
                             </div>
                         </div>
