@@ -13,7 +13,7 @@ $db = "samuelphilip_vprojectside";
 $googleappid = "433884122087-o0ge9nln3lpkqrs531kk9q469amli2b3.apps.googleusercontent.com"; 
 $googleappsecret = "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"; 
 // $redirectURL = "http://localhost:81/LoginwithGoogle/authenticate.php"; 
-$redirectURL = "https://vprojects.samuelphilip.in/authenticate.php"; 
+$redirectURL = "https://vcode.samuelphilip.in/authenticate.php"; 
 
 ##### Create connection #####
 $conn = new mysqli($servername, $username, $password, $db);
