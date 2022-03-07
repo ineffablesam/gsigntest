@@ -5,9 +5,9 @@
 session_start();
 ##### DB Configuration #####
 $servername = "localhost";
-$username = "root";
-$password = "sheelaP2013";
-$db = "gtest";
+$username = "samuelphilip_samuelphilip";
+$password = "zHGmN-1UJiB_";
+$db = "samuelphilip_vprojectside";
 
 ##### Google App Configuration #####
 $googleappid = "433884122087-o0ge9nln3lpkqrs531kk9q469amli2b3.apps.googleusercontent.com"; 
