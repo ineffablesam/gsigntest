@@ -46,7 +46,7 @@ if ($googleClient->getAccessToken()) {
 	$userData = $res->fetch_assoc();
 
 	$_SESSION['userData'] = $userData;
-	header("Location: ide/index.php");
+	header("Location: ide/index");
 
 } else {
 	header("Location:/");
